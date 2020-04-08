@@ -9,12 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //
+    @IBOutlet var table: UITableView!
+    @IBOutlet var label: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        title = "Notes"
+
     }
 
-
+    //
+    @IBAction func didTapNewNote() {
+        
+    }
+    
 }
 
