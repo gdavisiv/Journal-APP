@@ -28,7 +28,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     //Create an action function that the use can tap a button to create a new note
     @IBAction func didTapNewNote() {
-        
+        gaurd let vc = storyboard?.instantiateViewController(identifier: "new") as? ?EntryViewController else {
+            return
+        }
+        vc.title = "New Note"
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     //Table function
