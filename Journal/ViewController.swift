@@ -5,7 +5,8 @@
 //  Created by George Davis IV on 4/8/20.
 //  Copyright © 2020 3DMations. All rights reserved.
 //
-
+//Tutorial + TimeStamp :  https://youtu.be/pZVXENscpTM?t=618
+//
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -28,7 +29,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     //Create an action function that the use can tap a button to create a new note
     @IBAction func didTapNewNote() {
-        gaurd let vc = storyboard?.instantiateViewController(identifier: "new") as? ?EntryViewController else {
+        gaurd let vc = storyboard?.instantiateViewController(identifier: "new") as? EntryViewController else {
             return
         }
         vc.title = "New Note"
